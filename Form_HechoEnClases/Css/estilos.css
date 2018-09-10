@@ -1,0 +1,318 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+}
+
+.login {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9AD1ED;
+}
+
+.login__container {
+    background-color: #EFEFEF;
+    width: 350px;
+    height: 375px;
+}
+
+.login__top {
+    background-color: #EFEFEF;
+    border-top: solid .5rem #F39B53;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.2rem 0;
+}
+
+.login__img {
+    width: 4rem;
+    margin-right: 1rem;
+}
+
+.login__title {
+    color: #31B1E5;
+}
+
+    .login__title span {
+        color: #F39B53;
+    }
+
+.login__form {
+    background: #EFEFEF;
+    display: flex;
+    flex-direction: column;
+    padding: .5rem 2rem 2rem;
+    text-align: center;
+}
+
+#userTextbox, #passwordTextbox {
+    margin: .4rem 0;
+    padding: .5rem;
+    border: none;
+    border-bottom: solid 0.2rem #C8C8C8;
+    background: #EFEFEF;
+    transition: all .4s
+}
+
+#userTextbox:focus, #passwordTextbox:focus {
+    outline: none;
+    border-bottom: solid 0.2rem #E67E22;
+}
+
+#buttonEntrar {
+    border: none;
+    padding: .5rem 0;
+    margin: 1rem 0 .3rem;
+    background-color: #31B1E5;
+    color: white;
+}
+
+#buttonEntrar:hover {
+    background-color: rgb(255,208,11);
+    cursor: pointer;
+    color: black;
+}
+
+.form__recover {
+    color: #F39B53;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.form__recover:hover {
+    color: #E67E22;
+}
+
+.container-execute {
+    position: absolute;
+    margin-left: 300px;
+    background-image: url("../Images/wp.jpg");
+    width: 77%;
+    height: 100%;
+}
+
+.container-execute iframe {
+    width: 100%;
+    height: 670px;
+    border-style: none;
+}
+
+.slogan .imagen {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    margin-top: 10px;
+    left: calc(50% - 50px);
+}
+
+.slogan h2 {
+    position: relative;
+    left: 75px;
+    line-height: 20px;
+    color: #494949;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.slogan h3 {
+    position: relative;
+    left: 50px;
+    line-height: 20px;
+    color: #494949;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.contenedor-menu a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.contenedor-menu .btn-menu {
+    display: none;
+    padding: 20px;
+    background: #0D2C44;
+    color: #FFFFFF;
+}
+
+.btn-menu .icono {
+    float: right;
+}
+
+.contenedor-menu {
+    background: #E9E9E9;
+    height: 675px;
+    width: 20%; /*20%*/
+    min-width: 300px;
+    /* margin: 50px; TODO: Comentar esta linea luego de diseñar*/
+    display: inline-block;
+    font-family: 'Roboto',sans-serif;
+    line-height: 18px;
+}
+
+.contenedor-menu .menu {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.contenedor-menu ul {
+    list-style: none;
+}
+
+.contenedor-menu .menu li a {
+    color: #494949;
+    display: block;
+    padding: 15px 20px;
+    background: #E9E9E9;
+}
+
+.contenedor-menu .menu li a:hover {
+    background: #1A95D5;
+    color: #FFFFFF;
+}
+
+.contenedor-menu .menu .icono {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.contenedor-menu .menu .icono.izquierda {
+    float: left;
+    margin-right: 10px;
+}
+
+.contenedor-menu .menu .icono.derecha {
+    float: right;
+    margin-left: 10px;
+}
+
+.contenedor-menu .menu ul {
+    display: none;
+}
+
+.contenedor-menu .menu ul li a {
+    background: #424242;
+    color: #E9E9E9;
+}
+
+.contenedor-menu .menu .activado > a {
+    background: rgb(26,133,201);
+    color: #FFFFFF;
+}
+
+.container {
+    max-width: 450px;
+    height: auto;
+    background-color: #EFEFEF;
+    margin: 5% auto;
+    padding-bottom: 1rem;
+}
+
+.container .form__top {
+    width: 100%;
+    text-align: center;
+    padding: 2rem 0 1rem;
+    border-top: solid .4rem #F39B53;
+    margin-bottom: 1rem;
+}
+
+.container .form__top h2 {
+    font-weight: bold;
+    color: #31B1E5;
+    font-size: 18px;
+}
+
+.container h2 span {
+    color: #F39B53;
+}
+
+.container .form__reg {
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    margin: 20px;
+}
+
+.container .btn__form {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.container .input, #ButtonGuardar, #ButtonNuevo, #ButtonEliminar, #ButtonBuscar{
+    background-color: #EFEFEF;
+    padding: .5rem;
+    margin: .5rem 0;
+    border: none;
+    border-bottom: solid #C8C8C8 .2rem;
+    transition: all .5s;
+}
+
+.container .input:focus {
+    border-bottom: solid #F39B53 .2rem;
+}
+
+.container #ButtonGuardar, #ButtonNuevo, #ButtonModificar, #ButtonEliminar, #ButtonBuscar{
+    width: 40%;
+    border-bottom: none;
+    background-color: #31B1E5;
+    color: white;
+}
+
+.container #ButtonEliminar {
+    background-color: #EDA135;
+}
+
+.container #ButtonNuevo {
+    background-color: #EDA135;
+}
+
+.container #ButtonGuardar:hover, #ButtonBuscar:hover {
+    background-color: #4C9ED9;
+}
+
+.container #ButtonNuevo:hover {
+    background-color: #FA9535;
+}
+
+.container #ButtonEliminar:hover {
+    background-color: #FA9535;
+}
+
+#GridView {
+    width: 100%;
+    /*this will be the color of the odd row*/
+    background-color: #fff;
+    margin: 5px 0 10px 0;
+    border: solid 1px #525252;
+    border-collapse: collapse;
+}
+
+/*data elements*/
+#GridView td {
+    padding: 2px;
+    border: solid 1px #c1c1c1;
+    color: #717171;
+}
+
+/*header elements*/
+#GridView th {
+    padding: 4px 2px;
+    color: #fff;
+    background: #424242;
+    border-left: solid 1px #525252;
+    font-size: 0.9em;
+}
